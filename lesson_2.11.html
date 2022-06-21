@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script>
+    let login = prompt('Who are you?','');
+    if (login === 'Admin'){
+        let pass = prompt('What is the password?','');
+        if (pass === 'I am the boss'){
+            alert('Welcome boss!');
+        } else if (pass === '' || pass === null){
+            alert('Cancel');
+        } else{
+            alert('Incorrect password');
+        }
+    } else if (login === '' || login === null){
+        alert('Cancel');
+    } else {
+        alert('I do not know you!');
+    }
+</script>
+</body>
+</html>
