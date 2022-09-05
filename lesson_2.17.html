@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script>
+    let ask = (question, yes, no) => {
+        if (confirm(question)) yes()
+        else no();
+    }
+    ask(
+        "Agree?",
+        ()=> alert("Agreed."),
+        ()=> alert("Not agreed.")
+    );
+</script>
+</body>
+</html>
